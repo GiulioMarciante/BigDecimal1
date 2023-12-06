@@ -8,11 +8,14 @@ import java.math.RoundingMode;
 public class Main {
     public static void main(String[] args) {
         BigDecimal bigNum1 = BigDecimal.valueOf(10.3);
+
         BigDecimal bigNum2 = BigDecimal.valueOf(2.2);
+
         System.out.println(calculateOperation(bigNum1,bigNum2,AritmeticOp.DIVISION));
     }
     public static BigDecimal calculateOperation(BigDecimal n1, BigDecimal n2,AritmeticOp operator){
         BigDecimal bigResult = BigDecimal.valueOf(0.0);
+
         switch(operator){
             case AritmeticOp.ADDITION:
                 System.out.println("Risultato dell'addizione:");
